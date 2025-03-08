@@ -111,6 +111,45 @@ Export repository statistics to a JSON file:
 git-tracker export -r ~/projects/my-repo -f json -o my-repo-stats
 ```
 
+## Web App
+
+Git Activity Tracker also includes a web application that provides a user-friendly interface for tracking Git activity.
+
+### Starting the Web App
+
+1. Navigate to the web-app directory:
+```bash
+cd web-app
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the server:
+```bash
+npm start
+```
+
+4. Open your browser and navigate to [http://localhost:3000](http://localhost:3000)
+
+### Using the Web App
+
+1. **Scan for Repositories**: Enter a directory path to scan for Git repositories
+2. **View Repository Details**: Select a repository from the list to view its statistics
+3. **Filter Results**: Use the filters to narrow down the results by author or date range
+4. **Interactive Dashboard**: View commit history, branch information, and other Git statistics in an interactive dashboard
+
+### Web App Features
+
+- User-friendly interface for scanning and viewing Git repositories
+- Detailed statistics and visualizations for each repository
+- Filter options by author and date range
+- Responsive design that works on desktop and mobile devices
+
+For more details about the web app, see the [web-app README](/web-app/README.md).
+
 ## License
 
 MIT 
