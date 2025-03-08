@@ -1,0 +1,36 @@
+{
+  "name": "git-activity-tracker",
+  "version": "1.0.0",
+  "description": "A CLI tool to track Git activity across local repositories",
+  "main": "src/index.js",
+  "bin": {
+    "git-tracker": "./src/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "git",
+    "cli",
+    "activity",
+    "tracker",
+    "repository"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "date-fns": "^2.30.0",
+    "figlet": "^1.7.0",
+    "glob": "^10.3.10",
+    "inquirer": "^9.2.12",
+    "ora": "^7.0.1",
+    "boxen": "^7.1.1"
+  },
+  "engines": {
+    "node": ">=14.16"
+  }
+}

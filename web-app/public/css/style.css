@@ -1,0 +1,282 @@
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.card {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  border-radius: 0.5rem;
+  border: none;
+  margin-bottom: 1.5rem;
+}
+
+.card-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 1rem;
+}
+
+.card-body {
+  padding: 1.25rem;
+}
+
+/* Repository list styles */
+.repo-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.repo-item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  transition: background-color 0.2s;
+}
+
+.repo-item:hover {
+  background-color: #f8f9fa;
+}
+
+.repo-item.active {
+  background-color: #e9f0ff;
+}
+
+.repo-item-checkbox {
+  margin-right: 1rem;
+}
+
+.repo-item-content {
+  flex: 1;
+}
+
+.repo-item-name {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.repo-item-path {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+/* Legacy list group styles for backward compatibility */
+.list-group-item {
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.list-group-item:hover {
+  background-color: #f8f9fa;
+}
+
+.list-group-item.active {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+.table th {
+  font-weight: 600;
+}
+
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+  margin: 2rem auto;
+}
+
+footer {
+  margin-top: 2rem;
+}
+
+/* Status colors */
+.status-added {
+  color: #198754;
+}
+
+.status-modified {
+  color: #fd7e14;
+}
+
+.status-deleted {
+  color: #dc3545;
+}
+
+.status-untracked {
+  color: #6c757d;
+}
+
+/* Branch indicator */
+.current-branch {
+  font-weight: bold;
+  color: #198754;
+}
+
+/* Commit hash */
+.commit-hash {
+  font-family: monospace;
+  color: #6c757d;
+}
+
+/* Stat cards for dashboard */
+.stat-card {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  height: 100%;
+}
+
+.stat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+}
+
+.stat-icon i {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.stat-details h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.stat-details p {
+  margin-bottom: 0;
+  color: #6c757d;
+}
+
+.bg-primary {
+  background-color: #0d6efd;
+}
+
+.bg-success {
+  background-color: #198754;
+}
+
+.bg-info {
+  background-color: #0dcaf0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .stat-card {
+    margin-bottom: 1rem;
+  }
+}
+
+.month-filter {
+  width: 150px;
+}
+
+.month-filter .form-select {
+  font-size: 0.875rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+/* Date range picker styles */
+.date-range-picker {
+  margin-bottom: 1rem;
+}
+
+.date-range-picker .input-group {
+  flex-wrap: nowrap;
+}
+
+.date-range-picker input[type="date"] {
+  min-width: 120px;
+}
+
+/* User search styles */
+.user-search {
+  margin-bottom: 1rem;
+}
+
+.user-search .input-group-text {
+  background-color: transparent;
+  border-left: none;
+}
+
+.user-search .form-control:focus + .input-group-text {
+  border-color: #86b7fe;
+}
+
+.user-search .btn-outline-secondary {
+  border-color: #ced4da;
+}
+
+.user-search .btn-outline-secondary:hover {
+  background-color: #f8f9fa;
+}
+
+/* User activity table styles */
+.user-row {
+  transition: background-color 0.2s;
+}
+
+.user-row:hover {
+  background-color: #f8f9fa;
+}
+
+.user-row td:first-child {
+  font-weight: 600;
+}
+
+.user-row.highlight {
+  background-color: #fff3cd;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .stat-card {
+    margin-bottom: 1rem;
+  }
+  
+  .date-range-picker .input-group {
+    flex-wrap: wrap;
+  }
+  
+  .date-range-picker input[type="date"],
+  .date-range-picker .input-group-text,
+  .date-range-picker .btn {
+    margin-top: 0.5rem;
+  }
+} 
